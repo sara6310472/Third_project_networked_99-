@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../fontawesome/css/solid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="icon" href="../images/icon.png">
+    <title>Task Manager</title>
+    <script src="../js/components/TaskComponent.js"></script>
+    <script src="../js/components/RcycleComponent.js"></script>
+</head>
+
+<body>
+    <main>
+
+    </main>
+
+    <template class="signInPage">
+        <div class="formContainer">
+            <h1>Sign-In Form</h1>
+            <form class="container">
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Your Password" required>
+                <button type="submit">Sign In</button>
+                <p class="link">Sign Up</p>
+            </form>
+        </div>
+    </template>
+
+    <template class="signUpPage">
+        <div class="formContainer">
+            <h1>Sign-Up Form</h1>
+            <form class="container">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Your Password" required>
+                <button type="submit">Sign Up</button>
+                <p class="link">Sign In</p>
+            </form>
+        </div>
+    </template>
+
+    <template class="mainPage">
+        <div class="container">
+            <div class="mainHeader">
+                <button id="logOut" class="btn-primary">Logout</button>
+                <div class="search-container">
+                    <input type="search" id="searchInput" placeholder="Search tasks...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="mainContainer">
+                <div class="app-container">
+                    <section class="task-form">
+                        <h2>Add New Task</h2>
+                        <div id="newTaskForm">
+                            <input type="text" id="taskTitle" placeholder="Task Title" required>
+                            <textarea id="taskContent" placeholder="Task Content" required></textarea>
+                            <button type="submit" class="btn-primary" id="create">Add Task</button>
+                        </div>
+                    </section>
+                </div>
+                <div id="taskTemplate">
+                    <h2 class="title">Your Tasks</h2>
+                    <div id="taskList"></div>
+                </div>
+                <button class="recycle"><i class="fa-solid fa-trash"></i></button>
+                <button class="task"><i class="fa-solid fa-book"></i></button>
+                <button class="done"><i class="fa-solid fa-thumbs-up"></i></button>
+            </div>
+        </div>
+    </template>
+
+    <script src="../js/User.js"></script>
+    <script src="../js/Data.js"></script>
+    <script src="../js/App.js"></script>
+    <script src="../js/DataBase.js"></script>
+    <script src="../js/FXMLHttpRequest.js"></script>
+    <script src="../js/Network.js"></script>
+    <script src="../js/UserServer.js"></script>
+    <script src="../js/DataServer.js"></script>
+    <script src="../js/Cable.js"></script>
+    <script src="../js/UserDataBase.js"></script>
+    <script src="../js/Main.js"></script>
+</body>
+
+</html>
